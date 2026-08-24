@@ -904,7 +904,8 @@ textarea.input {
 /* Титульный экран с фотографией */
 .hero-full {
   position: relative;
-  min-height: 920px;
+  height: min(100svh, 920px);
+  min-height: 640px;
   overflow: hidden;
   background: #0a1220;
   display: grid;
@@ -3065,7 +3066,8 @@ body.is-book-open {
     font-size: 10.5px;
   }
   .hero-full {
-    min-height: 680px;
+    height: auto;
+    min-height: min(100svh, 720px);
   }
   .hero-full__title {
     font-size: 77px;
@@ -3198,7 +3200,8 @@ body.is-book-open {
     font-size: 10px;
   }
   .hero-full {
-    min-height: 560px;
+    height: auto;
+    min-height: min(100svh, 640px);
   }
   .hero-full__title {
     font-size: 44px;
