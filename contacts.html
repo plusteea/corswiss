@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Контакты — CorSwiss</title>
+        <meta name="description" content="Телефон, email и WhatsApp CorSwiss. Форма конфиденциальной консультации, юридические адреса в Швейцарии и ОАЭ." />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <a class="logo" href="index.html">corsw<b>+</b>ss</a>
+            <nav class="site-nav" aria-label="Основная навигация">
+                <ul>
+                    <li><a href="clinics.html">Клиники</a></li>
+                    <li><a href="specialties.html">Направления</a></li>
+                    <li><a href="support.html">Сопровождение</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="doctors.html">Врачи</a></li>
+                    <li><a href="contacts.html" aria-current="page">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-side">
+                <nav class="lang" aria-label="Язык сайта">
+                    <a href="contacts.html" hreflang="ru" lang="ru" aria-current="true">RU</a>
+                    <span class="lang__sep" aria-hidden="true">·</span>
+                    <a href="#" hreflang="en" lang="en">EN</a>
+                </nav>
+                <a class="btn" href="#book" data-book-open>Записаться <span class="arr" aria-hidden="true">→</span></a>
+            </div>
+        </header>
+        <div class="header-spacer" aria-hidden="true"></div>
+
+        <main>
+            <!-- Титул -->
+            <section class="hero-text">
+                <nav class="crumbs" aria-label="Хлебные крошки">
+                    <a href="index.html">CorSwiss</a>
+                    <span aria-hidden="true">/</span>
+                    <span aria-current="page">Контакты</span>
+                </nav>
+                <h1 class="display hero-text__title">
+                    Один разговор — и вы знаете, как будет выглядеть ваш путь в Швейцарию.
+                    <em>Бесплатно, конфиденциально, на вашем языке.</em>
+                </h1>
+            </section>
+
+            <!-- Контактные данные -->
+            <section class="section section--sunken section--ruled section--tight">
+                <div class="grid grid--label">
+                    <p class="eyebrow">Контакты</p>
+                    <div>
+                        <a class="display contact-phone" href="tel:+41789488882">+41 78 94 88 88 2</a>
+                        <a class="display italic contact-email" href="mailto:info@corswiss.ch">info@corswiss.ch</a>
+                        <div class="contact-actions">
+                            <a class="btn" href="https://wa.me/41789488882">WhatsApp <span class="arr" aria-hidden="true">→</span></a>
+                            <a class="btn btn--ghost" href="#form">Получить консультацию</a>
+                        </div>
+                        <div class="grid grid--2 contact-meta">
+                            <div>
+                                <h2 class="contact-meta__label">Время работы</h2>
+                                <p class="contact-meta__text">Понедельник — пятница<br />10:00 — 19:00 (CET)</p>
+                            </div>
+                            <div>
+                                <h2 class="contact-meta__label">Конфиденциальность</h2>
+                                <p class="contact-meta__text contact-meta__text--narrow">Каждый разговор — под защитой полной конфиденциальности. Ваши данные не передаются третьим лицам.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Форма -->
+            <section class="section section--ruled section--tight" id="form">
+                <div class="grid grid--label">
+                    <div>
+                        <p class="eyebrow">Консультация</p>
+                        <h2 class="display contact-form__title">Расскажите о своей задаче</h2>
+                        <p class="lede contact-form__lede">Опишите ситуацию своими словами — медицинские документы не обязательны для первого разговора. Мы ответим в течение рабочего дня.</p>
+                    </div>
+                    <form action="#" method="post">
+                        <div class="field"><label for="f-name">Ваше имя</label><input class="input" id="f-name" name="name" type="text" /></div>
+                        <div class="field"><label for="f-contact">Телефон или email</label><input class="input" id="f-contact" name="contact" type="text" /></div>
+                        <div class="field"><label for="f-msg">Ваш вопрос или задача</label><textarea class="input" id="f-msg" name="message" rows="4"></textarea></div>
+                        <p class="contact-form__note">Отправляя форму, вы соглашаетесь с обработкой данных для ответа на ваш запрос. Полная конфиденциальность гарантирована.</p>
+                        <button class="btn" type="submit">Отправить <span class="arr" aria-hidden="true">→</span></button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Юридические адреса -->
+            <section class="section section--sunken section--tight">
+                <div class="grid grid--label">
+                    <p class="eyebrow">Компания</p>
+                    <div class="grid grid--2 contact-offices">
+                        <div>
+                            <h2 class="display contact-office__title">CorSwiss GmbH</h2>
+                            <address class="contact-office__address">
+                                Talstrasse 37<br />
+                                8808 Pfäffikon SZ<br />
+                                Switzerland
+                            </address>
+                            <p class="contact-office__note">Юридические адреса компании. Мы работаем там, где вы: консультации проводим дистанционно, встречаем лично — в клинике, отеле или аэропорту.</p>
+                            <p class="contact-office__note contact-office__note--last">Работаем на вашем языке. Личный координатор — на связи на всём пути.</p>
+                        </div>
+                        <div>
+                            <h2 class="display contact-office__title">CorSwiss FZCO</h2>
+                            <address class="contact-office__address contact-office__address--last">
+                                IFZA Business Park<br />
+                                Dubai Silicon Oasis<br />
+                                UAE
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WhatsApp -->
+            <section class="section section--accent cta-band">
+                <div class="cta-band__inner">
+                    <p class="eyebrow eyebrow--light">Быстрая связь</p>
+                    <h2 class="display">Удобнее в мессенджере? Напишите нам в WhatsApp — ответим лично, без ботов.</h2>
+                    <div class="cta-band__actions">
+                        <a class="btn btn--light" href="https://wa.me/41789488882">Написать в WhatsApp <span class="arr" aria-hidden="true">→</span></a>
+                        <a class="btn btn--ghost-light" href="tel:+41789488882">+41 78 94 88 88 2</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-grid">
+                <div>
+                    <a class="logo" href="index.html">corsw<b>+</b>ss</a>
+                    <p class="footer-note">
+                        CorSwiss GmbH<br />
+                        Talstrasse 37<br />
+                        8808 Pfäffikon SZ<br />
+                        Switzerland
+                    </p>
+                    <div class="footer-contact">
+                        <div><a href="tel:+41789488882">+41 78 94 88 88 2</a></div>
+                        <div><a href="mailto:info@corswiss.ch">info@corswiss.ch</a></div>
+                    </div>
+                </div>
+                <nav aria-label="Разделы сайта">
+                    <ul>
+                        <li><a href="clinics.html">Клиники</a></li>
+                        <li><a href="doctors.html">Врачи</a></li>
+                        <li><a href="specialties.html">Направления</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <nav aria-label="Медиа">
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/corswiss.ch">Facebook</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-social">
+                    <a href="mailto:info@corswiss.ch">Email</a>
+                    <a href="https://wa.me/41789488882">WhatsApp</a>
+                    <a href="#">Telegram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 CorSwiss GmbH</span>
+                <span>Zürich · Dubai</span>
+            </div>
+        </footer>
+        <script src="js/header.js"></script>
+        <script src="js/book-modal.js"></script>
+        <script src="js/phone-mask.js"></script>
+    </body>
+</html>

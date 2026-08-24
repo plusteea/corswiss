@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Врачи — CorSwiss</title>
+        <meta name="description" content="Профессора, руководители отделений и хирурги ведущих клиник Швейцарии — специалисты, к которым CorSwiss организует консультацию под ключ." />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <a class="logo" href="index.html">corsw<b>+</b>ss</a>
+            <nav class="site-nav" aria-label="Основная навигация">
+                <ul>
+                    <li><a href="clinics.html">Клиники</a></li>
+                    <li><a href="specialties.html">Направления</a></li>
+                    <li><a href="support.html">Сопровождение</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="doctors.html" aria-current="page">Врачи</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-side">
+                <nav class="lang" aria-label="Язык сайта">
+                    <a href="doctors.html" hreflang="ru" lang="ru" aria-current="true">RU</a>
+                    <span class="lang__sep" aria-hidden="true">·</span>
+                    <a href="#" hreflang="en" lang="en">EN</a>
+                </nav>
+                <a class="btn" href="#book" data-book-open>Записаться <span class="arr" aria-hidden="true">→</span></a>
+            </div>
+        </header>
+        <div class="header-spacer" aria-hidden="true"></div>
+
+        <main>
+            <!-- Титул -->
+            <section class="hero-text">
+                <nav class="crumbs" aria-label="Хлебные крошки">
+                    <a href="index.html">CorSwiss</a>
+                    <span aria-hidden="true">/</span>
+                    <span aria-current="page">Врачи</span>
+                </nav>
+                <p class="eyebrow doctors-intro__eyebrow">Наши специалисты</p>
+                <h1 class="display hero-text__title">Имена, которым доверяют</h1>
+                <p class="lede doctors-intro__lede">Мы открываем доступ к профессорам, руководителям отделений и хирургам с мировой репутацией — специалистам ведущих швейцарских клиник, к которым организуем консультацию под ключ.</p>
+            </section>
+
+            <!-- Фильтр по направлениям -->
+            <section class="doctors-filter">
+                <p class="eyebrow doctors-filter__label">Направление</p>
+                <div class="chips" role="group" aria-label="Фильтр по направлению">
+                    <button class="chip" type="button" aria-pressed="true">Все</button>
+                    <button class="chip" type="button" aria-pressed="false" data-target="g-gyn">Гинекология</button>
+                    <button class="chip" type="button" aria-pressed="false" data-target="g-ortho">Ортопедия</button>
+                    <button class="chip" type="button" aria-pressed="false" data-target="g-cardio">Кардио / Сосуды</button>
+                    <button class="chip" type="button" aria-pressed="false" data-target="g-visceral">Брюшная хирургия</button>
+                    <button class="chip" type="button" aria-pressed="false" data-target="g-thoracic">Грудная хирургия</button>
+                    <button class="chip" type="button" aria-pressed="false" data-target="g-plastic">Пластика / Лицо</button>
+                    <button class="chip" type="button" aria-pressed="false" data-target="g-onco">Онкология</button>
+                    <button class="chip" type="button" aria-pressed="false" data-target="g-other">Другие направления</button>
+                </div>
+            </section>
+
+            <!-- Гинекология -->
+            <section class="section doctors-group" id="g-gyn">
+                <div class="doctors-group__head">
+                    <h2 class="display doctors-group__title">Гинекология и акушерство</h2>
+                    <span class="doctors-group__count">6 врачей</span>
+                </div>
+                <div class="doctor-grid">
+                    <a class="doctor-card" href="doctor.html">
+                        <div class="photo"><img src="images/doctors/tutschek-boris.jpg" alt="Проф. Борис Тучек" /></div>
+                        <p class="doctor-card__spec">Медицина матери и плода</p>
+                        <h3>Проф. Борис Тучек</h3>
+                        <p class="doctor-card__meta">Пренатальная диагностика</p>
+                        <span class="doctor-card__more">Профиль <span class="arr" aria-hidden="true">→</span></span>
+                    </a>
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/obwegeser-joerg.jpg" alt="Проф. Йорг Обвегезер" /></div>
+                        <p class="doctor-card__spec">Оперативная гинекология</p>
+                        <h3>Проф. Йорг Обвегезер</h3>
+                        <p class="doctor-card__meta">Гинекология</p>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/imesch-patrick.jpg" alt="Проф. Патрик Имеш" /></div>
+                        <p class="doctor-card__spec">Онкогинекология</p>
+                        <h3>Проф. Патрик Имеш</h3>
+                        <p class="doctor-card__meta">Гинекология</p>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/koechli-lea.jpg" alt="Леа Кёхли" /></div>
+                        <p class="doctor-card__spec">Гинекология и роды</p>
+                        <h3>Леа Кёхли</h3>
+                        <p class="doctor-card__meta">Маммология</p>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/wyss-pius.jpg" alt="Проф. Пиус Висс" /></div>
+                        <p class="doctor-card__spec">Оперативная гинекология</p>
+                        <h3>Проф. Пиус Висс</h3>
+                        <p class="doctor-card__meta">Гинекология</p>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/koechli-ossi.jpg" alt="Проф. Осси Р. Кёхли" /></div>
+                        <p class="doctor-card__spec">Онкогинекология</p>
+                        <h3>Проф. Осси Р. Кёхли</h3>
+                        <p class="doctor-card__meta">Маммология</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Ортопедия -->
+            <section class="section section--sunken doctors-group" id="g-ortho">
+                <div class="doctors-group__head">
+                    <h2 class="display doctors-group__title">Ортопедия</h2>
+                    <span class="doctors-group__count">4 врачей</span>
+                </div>
+                <div class="doctor-grid">
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doc-erggelet.jpg" alt="Проф. Кристоф Эрггелет" /></div>
+                        <p class="doctor-card__spec">Сохранение суставов</p>
+                        <h3>Проф. Кристоф Эрггелет</h3>
+                        <p class="doctor-card__meta">Хрящевая регенерация</p>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/fabian-von-knoch.jpg" alt="ПД Фабиан фон Кнох" /></div>
+                        <p class="doctor-card__spec">Эндопротезирование</p>
+                        <h3>ПД Фабиан фон Кнох</h3>
+                        <p class="doctor-card__meta">Ортопедия</p>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/zweifel-karl.jpg" alt="Карл Цвайфель" /></div>
+                        <p class="doctor-card__spec">Хирургия суставов</p>
+                        <h3>Карл Цвайфель</h3>
+                        <p class="doctor-card__meta">Ортопедия</p>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/philipp-frey.jpg" alt="Филипп Фрай" /></div>
+                        <p class="doctor-card__spec">Хирургия плеча</p>
+                        <h3>Филипп Фрай</h3>
+                        <p class="doctor-card__meta">Ортопедия</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Кардио -->
+            <section class="section doctors-group" id="g-cardio">
+                <div class="doctors-group__head">
+                    <h2 class="display doctors-group__title">Кардиология и сосудистая медицина</h2>
+                    <span class="doctors-group__count">2 врачей</span>
+                </div>
+                <div class="doctor-grid">
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/gabor-sutsch.jpg" alt="Габор Зютч" /></div>
+                        <p class="doctor-card__spec">Здоровье сердца</p>
+                        <h3>Габор Зютч</h3>
+                        <p class="doctor-card__meta">Кардиология</p>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/anders-j-leu.jpg" alt="Проф. Андерс Лой" /></div>
+                        <p class="doctor-card__spec">Сосудистая медицина</p>
+                        <h3>Проф. Андерс Лой</h3>
+                        <p class="doctor-card__meta">Ангиология</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Брюшная хирургия -->
+            <section class="section section--sunken doctors-group" id="g-visceral">
+                <div class="doctors-group__head">
+                    <h2 class="display doctors-group__title">Хирургия органов брюшной полости</h2>
+                    <span class="doctors-group__count">4 врачей</span>
+                </div>
+                <div class="doctor-grid">
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doc-clavien.jpg" alt="Проф. Пьер-Ален Клавьен" /></div>
+                        <p class="doctor-card__spec">Хирургия печени и ЖКТ</p>
+                        <h3>Проф. Пьер-Ален Клавьен</h3>
+                        <p class="doctor-card__meta">Висцеральная хирургия</p>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/christen-daniel.jpg" alt="Даниэль Кристен" /></div>
+                        <p class="doctor-card__spec">Висцеральная хирургия</p>
+                        <h3>Даниэль Кристен</h3>
+                        <p class="doctor-card__meta">Хирургия печени и ЖКТ</p>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/jeanmonod-pascal.jpg" alt="Паскаль Жанмоно" /></div>
+                        <p class="doctor-card__spec">Висцеральная хирургия</p>
+                        <h3>Паскаль Жанмоно</h3>
+                        <p class="doctor-card__meta">Хирургия ЖКТ</p>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/frei-pascal.jpg" alt="Паскаль Фрай" /></div>
+                        <p class="doctor-card__spec">Гастроэнтерология</p>
+                        <h3>Паскаль Фрай</h3>
+                        <p class="doctor-card__meta">Заболевания ЖКТ</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Грудная хирургия -->
+            <section class="section doctors-group" id="g-thoracic">
+                <div class="doctors-group__head">
+                    <h2 class="display doctors-group__title">Грудная хирургия</h2>
+                    <span class="doctors-group__count">1 врач</span>
+                </div>
+                <div class="doctor-grid">
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doc-weder.jpg" alt="Проф. Вальтер Ведер" /></div>
+                        <p class="doctor-card__spec">Здоровье лёгких</p>
+                        <h3>Проф. Вальтер Ведер</h3>
+                        <p class="doctor-card__meta">Торакальная хирургия</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Пластика -->
+            <section class="section section--sunken doctors-group" id="g-plastic">
+                <div class="doctors-group__head">
+                    <h2 class="display doctors-group__title">Пластическая и челюстно-лицевая хирургия</h2>
+                    <span class="doctors-group__count">2 врачей</span>
+                </div>
+                <div class="doctor-grid">
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doc-steiger.jpg" alt="Проф. Энрике Штайгер" /></div>
+                        <p class="doctor-card__spec">Эстетика и омоложение</p>
+                        <h3>Проф. Энрике Штайгер</h3>
+                        <p class="doctor-card__meta">Пластическая хирургия</p>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/sailer-hermann.jpg" alt="Проф. Херманн Ф. Зайлер" /></div>
+                        <p class="doctor-card__spec">Челюстно-лицевая хирургия</p>
+                        <h3>Проф. Херманн Ф. Зайлер</h3>
+                        <p class="doctor-card__meta">Реконструкция лица</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Онкология -->
+            <section class="section doctors-group" id="g-onco">
+                <div class="doctors-group__head">
+                    <h2 class="display doctors-group__title">Онкология и гематология</h2>
+                    <span class="doctors-group__count">2 врачей</span>
+                </div>
+                <div class="doctor-grid">
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/mueller-erich.jpg" alt="Эрих Мюллер" /></div>
+                        <p class="doctor-card__spec">Онкология и гематология</p>
+                        <h3>Эрих Мюллер</h3>
+                        <p class="doctor-card__meta">Лечение опухолей</p>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/jermann-monika.jpg" alt="Моника Ерманн" /></div>
+                        <p class="doctor-card__spec">Онкология</p>
+                        <h3>Моника Ерманн</h3>
+                        <p class="doctor-card__meta">Маммология</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Другие -->
+            <section class="section section--sunken doctors-group" id="g-other">
+                <div class="doctors-group__head">
+                    <h2 class="display doctors-group__title">Другие направления</h2>
+                    <span class="doctors-group__count">6 врачей</span>
+                </div>
+                <div class="doctor-grid">
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/guido-tenti.jpg" alt="Гвидо Тенти" /></div>
+                        <p class="doctor-card__spec">Урология</p>
+                        <h3>Гвидо Тенти</h3>
+                        <p class="doctor-card__meta">Операции da Vinci</p>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/bruehlmann-pius.jpg" alt="Пиус Брюльманн" /></div>
+                        <p class="doctor-card__spec">Ревматология</p>
+                        <h3>Пиус Брюльманн</h3>
+                        <p class="doctor-card__meta">Заболевания суставов</p>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/czermak-boris.jpg" alt="Борис Й. Чермак" /></div>
+                        <p class="doctor-card__spec">Хирургия кисти</p>
+                        <h3>Борис Й. Чермак</h3>
+                        <p class="doctor-card__meta">Хирургия кисти</p>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/fischer-michael.jpg" alt="Михаэль Фишер" /></div>
+                        <p class="doctor-card__spec">Неврология и психика</p>
+                        <h3>Михаэль Фишер</h3>
+                        <p class="doctor-card__meta">Нейростимуляция</p>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/kell-claudia.jpg" alt="Клаудия Келль" /></div>
+                        <p class="doctor-card__spec">Нефрология</p>
+                        <h3>Клаудия Келль</h3>
+                        <p class="doctor-card__meta">Заболевания почек</p>
+                    </article>
+                    <article class="doctor-card">
+                        <div class="photo"><img src="images/doctors/schmid-stefan.jpg" alt="Проф. Штефан Шмид" /></div>
+                        <p class="doctor-card__spec">Специалист клиники</p>
+                        <h3>Проф. Штефан Шмид</h3>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Призыв -->
+            <section class="section section--accent cta-band" id="cta">
+                <div class="cta-band__inner cta-band__inner--wide">
+                    <p class="eyebrow eyebrow--light">Не знаете, к кому обратиться?</p>
+                    <h2 class="display cta-band__title">Опишите задачу — мы подберём врача <em class="italic">и рассчитаем стоимость</em></h2>
+                    <div class="cta-band__actions">
+                        <a class="btn btn--light" href="contacts.html">Заказать консультацию <span class="arr" aria-hidden="true">→</span></a>
+                        <a class="btn btn--ghost-light" href="https://wa.me/41789488882">WhatsApp</a>
+                        <a class="cta-band__phone-link" href="tel:+41789488882">+41 78 94 88 88 2</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-grid">
+                <div>
+                    <a class="logo" href="index.html">corsw<b>+</b>ss</a>
+                    <p class="footer-note">
+                        CorSwiss GmbH<br />
+                        Talstrasse 37<br />
+                        8808 Pfäffikon SZ<br />
+                        Switzerland
+                    </p>
+                    <div class="footer-contact">
+                        <div><a href="tel:+41789488882">+41 78 94 88 88 2</a></div>
+                        <div><a href="mailto:info@corswiss.ch">info@corswiss.ch</a></div>
+                    </div>
+                </div>
+                <nav aria-label="Разделы сайта">
+                    <ul>
+                        <li><a href="clinics.html">Клиники</a></li>
+                        <li><a href="doctors.html">Врачи</a></li>
+                        <li><a href="specialties.html">Направления</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <nav aria-label="Медиа">
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/corswiss.ch">Facebook</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-social">
+                    <a href="mailto:info@corswiss.ch">Email</a>
+                    <a href="https://wa.me/41789488882">WhatsApp</a>
+                    <a href="#">Telegram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 CorSwiss GmbH</span>
+                <span>Zürich · Dubai</span>
+            </div>
+        </footer>
+        <script src="js/header.js"></script>
+        <script src="js/doctors.js"></script>
+        <script src="js/book-modal.js"></script>
+        <script src="js/phone-mask.js"></script>
+    </body>
+</html>
