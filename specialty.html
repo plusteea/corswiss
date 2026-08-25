@@ -13,7 +13,11 @@
     <body>
         <header class="site-header">
             <a class="logo" href="index.html">corsw<b>+</b>ss</a>
-            <nav class="site-nav" aria-label="Основная навигация">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Меню">
+                <span class="nav-toggle__bar" aria-hidden="true"></span>
+                <span class="nav-toggle__bar" aria-hidden="true"></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
                 <ul>
                     <li><a href="clinics.html">Клиники</a></li>
                     <li><a href="specialties.html" aria-current="page">Направления</a></li>
@@ -22,6 +26,11 @@
                     <li><a href="doctors.html">Врачи</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
+                <div class="site-nav__cta">
+                    <a class="btn" href="#book" data-book-open>Записаться <span class="arr" aria-hidden="true">→</span></a>
+                    <a class="btn site-nav__whatsapp" href="https://wa.me/41789488882" target="_blank" rel="noopener noreferrer">Написать в WhatsApp</a>
+                    <a class="site-nav__phone" href="tel:+41789488882">+41 78 94 88 88 2</a>
+                </div>
             </nav>
             <div class="header-side">
                 <nav class="lang" aria-label="Язык сайта">
@@ -305,11 +314,11 @@
                         <li><a href="blog.html">Блог</a></li>
                     </ul>
                 </nav>
-                <div class="footer-social">
+                <!-- <div class="footer-social">
                     <a href="mailto:info@corswiss.ch">Email</a>
                     <a href="https://wa.me/41789488882">WhatsApp</a>
                     <a href="#">Telegram</a>
-                </div>
+                </div> -->
             </div>
             <div class="footer-bottom">
                 <span>© 2026 CorSwiss GmbH</span>
