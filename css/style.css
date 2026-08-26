@@ -2925,9 +2925,10 @@ body.is-book-open {
 
 .clinic-partner__split {
   grid-template-columns: minmax(0, 1.22fr) 1px minmax(0, 1fr);
-  column-gap: 60px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
   row-gap: var(--s6);
-  align-items: start;
+  align-items: center;
   margin-top: 48px;
 }
 
@@ -2974,7 +2975,6 @@ body.is-book-open {
   margin: 0;
   max-width: none;
   padding-left: 20px;
-  border-left: 1px solid var(--line);
 }
 
 .clinic-partner__quote--sm {
@@ -2994,7 +2994,8 @@ body.is-book-open {
 
 .clinic-feature {
   grid-template-columns: minmax(0, 1.22fr) 1px minmax(0, 1fr);
-  column-gap: 60px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
   row-gap: var(--s6);
   align-items: start;
 }
@@ -3057,6 +3058,7 @@ body.is-book-open {
 
 .clinics-pair .card__badge {
   display: inline-block;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 14px 0 0;
   padding: 6px 12px;

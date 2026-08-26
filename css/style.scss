@@ -2413,7 +2413,7 @@ body.is-book-open {
     grid-template-columns: minmax(0, 1.22fr) 1px minmax(0, 1fr);
     column-gap: 60px;
     row-gap: var(--s6);
-    align-items: start;
+    align-items: center;
     margin-top: 48px;
 }
 .clinic-partner__rule {
@@ -2453,7 +2453,6 @@ body.is-book-open {
     margin: 0;
     max-width: none;
     padding-left: 20px;
-    border-left: 1px solid var(--line);
 }
 .clinic-partner__quote--sm {
     font-size: 24px;
