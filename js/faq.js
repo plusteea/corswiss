@@ -1,7 +1,7 @@
 (function () {
-    document.querySelectorAll(".faq details").forEach(function (details) {
+    function bindAccordion(details, bodySelector) {
         var summary = details.querySelector("summary");
-        var body = details.querySelector(".faq__body");
+        var body = details.querySelector(bodySelector);
         if (!summary || !body) return;
 
         if (details.hasAttribute("open")) {
@@ -28,5 +28,13 @@
                 });
             }
         });
+    }
+
+    document.querySelectorAll(".faq details").forEach(function (details) {
+        bindAccordion(details, ".faq__body");
+    });
+
+    document.querySelectorAll("details.specialties-all").forEach(function (details) {
+        bindAccordion(details, ".specialties-all__body");
     });
 })();
