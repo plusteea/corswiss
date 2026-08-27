@@ -534,8 +534,7 @@ textarea {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .photo--portrait {
@@ -543,14 +542,12 @@ textarea {
 }
 
 .photo__img--top {
-  -o-object-position: center top;
-     object-position: center top;
+  object-position: center top;
 }
 
 .photo__img--founder {
   filter: grayscale(0.18);
-  -o-object-position: center 28%;
-     object-position: center 28%;
+  object-position: center 28%;
 }
 
 .photo__img--zoom {
@@ -997,10 +994,8 @@ textarea.input {
   inset: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center 38%;
-     object-position: center 38%;
+  object-fit: cover;
+  object-position: center 38%;
   filter: brightness(0.78) saturate(1.02);
 }
 
@@ -1058,7 +1053,11 @@ textarea.input {
 
 /* Текстовый титул внутренних страниц */
 .page-intro {
-  padding-top: var(--s7);
+  padding-top: var(--s6);
+}
+
+.page-intro .hero-text__title {
+  margin-bottom: var(--s8);
 }
 
 .page-intro__body {
@@ -1067,8 +1066,7 @@ textarea.input {
 
 .hero-text {
   background: var(--bg);
-  padding-block: var(--s6) var(--s12);
-  padding-bottom: 0;
+  padding-block: var(--s6) var(--s8);
 }
 
 .hero-text__title {
@@ -1195,8 +1193,7 @@ a.card .photo img {
   inset: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transform: scale(1);
   transform-origin: center center;
   filter: grayscale(18%) contrast(1.02);
@@ -1288,8 +1285,7 @@ a.card:hover .card__more {
   inset: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transform: scale(1);
   transform-origin: center center;
   filter: grayscale(18%) contrast(1.02);
@@ -1347,8 +1343,7 @@ a.card:hover .card__more {
 .beyond {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  -moz-column-gap: var(--s8);
-       column-gap: var(--s8);
+  column-gap: var(--s8);
   border-top: 1px solid var(--line);
 }
 
@@ -1409,8 +1404,7 @@ a.card:hover .card__more {
   inset: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transform: scale(1);
   transform-origin: center center;
   filter: grayscale(18%) contrast(1.02);
@@ -1836,8 +1830,7 @@ body.is-book-open {
 .svc-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  -moz-column-gap: 90px;
-       column-gap: 90px;
+  column-gap: 90px;
 }
 
 .svc-list > article {
@@ -1965,23 +1958,19 @@ body.is-book-open {
 }
 
 .photo__img--transfer {
-  -o-object-position: 50% 55%;
-     object-position: 50% 55%;
+  object-position: 50% 55%;
 }
 
 .photo__img--eden {
-  -o-object-position: 50% 45%;
-     object-position: 50% 45%;
+  object-position: 50% 45%;
 }
 
 .photo__img--chenot {
-  -o-object-position: 50% 55%;
-     object-position: 50% 55%;
+  object-position: 50% 55%;
 }
 
 .photo__img--medicine {
-  -o-object-position: 58% 30%;
-     object-position: 58% 30%;
+  object-position: 58% 30%;
 }
 
 /* Контакты */
@@ -2397,8 +2386,7 @@ body.is-book-open {
 
 .svc-list--single {
   grid-template-columns: 1fr;
-  -moz-column-gap: 0;
-       column-gap: 0;
+  column-gap: 0;
 }
 
 .section-head--recognition {
@@ -2475,46 +2463,79 @@ body.is-book-open {
   margin-top: var(--s5);
 }
 
+.specialty-intro__title {
+  font-size: 72px;
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  margin: 22px 0 20px;
+  max-width: 18ch;
+}
+
 .specialty-intro__lede {
-  margin-top: var(--s4);
-  max-width: 70ch;
+  margin-top: 0;
+  max-width: 720px;
+  font-family: var(--serif);
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: var(--muted);
+}
+
+.specialty-about {
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  column-gap: 72px;
+  row-gap: var(--s8);
+  align-items: start;
 }
 
 .specialty-about__title {
-  font-size: 44px;
+  font-size: 40px;
   line-height: 1.12;
-  margin-top: var(--s3);
+  letter-spacing: -0.01em;
+  margin: 16px 0 28px;
+  max-width: 20ch;
 }
 
 .specialty-about__stack {
   display: grid;
-  gap: 22px;
+  gap: 18px;
 }
 
 .specialty-about__text {
   font-size: 16.5px;
-  line-height: 1.75;
+  line-height: 1.72;
   color: var(--ink-soft);
   margin: 0;
-  max-width: var(--measure);
+  max-width: 575px;
 }
 
 .specialty-facts {
   display: grid;
   gap: 0;
-  margin: var(--s10) 0 0;
+  margin: 0;
+  padding-left: 32px;
+  border-left: 1px solid var(--line);
 }
 
 .specialty-facts__row {
   display: grid;
-  grid-template-columns: minmax(0, 150px) 1fr;
-  gap: var(--s3);
-  padding: 18px 0;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  padding: 0 0 22px;
+  border-top: 0;
+}
+
+.specialty-facts__row + .specialty-facts__row {
+  padding-top: 22px;
   border-top: 1px solid var(--line);
 }
 
 .specialty-facts__label {
-  font-size: 11px;
+  margin: 0;
+  font-size: 10.5px;
+  font-weight: 300;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--muted);
@@ -2522,9 +2543,277 @@ body.is-book-open {
 
 .specialty-facts__value {
   margin: 0;
+  font-family: var(--serif);
+  font-size: 21px;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.specialty-section-head {
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.specialty-section-head--process {
+  margin-bottom: 36px;
+}
+
+.specialty-section-head__title {
+  font-size: 40px;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  margin-top: 16px;
+}
+
+.specialty-tasks {
+  display: grid;
+}
+
+.specialty-task {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1fr);
+  column-gap: 40px;
+  align-items: baseline;
+  padding: 26px 0;
+  border-bottom: 1px solid var(--line);
+  color: inherit;
+}
+
+.specialty-task:first-child {
+  border-top: 1px solid var(--line);
+}
+
+.specialty-task h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--ink);
+  transition: color 0.25s ease;
+}
+
+.specialty-task p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.62;
+  color: var(--muted);
+}
+
+.specialty-task:hover h3 {
+  color: var(--accent);
+}
+
+.specialty-steps {
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+.specialty-step {
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+}
+
+.specialty-step__n {
+  display: block;
+  margin-bottom: 12px;
+  font-family: var(--serif);
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  line-height: 1.02;
+  color: var(--accent);
+}
+
+.specialty-step h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.specialty-step p {
+  margin: 0;
   font-size: 14.5px;
   line-height: 1.65;
-  color: var(--ink-soft);
+  color: var(--muted);
+}
+
+.specialty-doctors {
+  --sd-gap: 16px;
+  --sd-cols: 4;
+  position: relative;
+}
+
+.specialty-doctors__viewport {
+  overflow: hidden;
+  width: 100%;
+  container-type: inline-size;
+}
+
+.specialty-doctors__track {
+  display: flex;
+  gap: var(--sd-gap);
+  align-items: stretch;
+}
+
+.specialty-doctors__item {
+  flex: 0 0 calc((100% - (var(--sd-cols) - 1) * var(--sd-gap)) / var(--sd-cols));
+  min-width: 0;
+}
+
+.specialty-doctors.is-slider .specialty-doctors__track {
+  width: max-content;
+  transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: transform;
+}
+
+.specialty-doctors.is-slider .specialty-doctors__item {
+  flex: 0 0 calc((100cqw - (var(--sd-cols) - 1) * var(--sd-gap)) / var(--sd-cols));
+}
+
+.specialty-doctors:not(.is-slider) .specialty-doctors__track {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--sd-gap);
+}
+
+.specialty-doctors:not(.is-slider) .specialty-doctors__item {
+  flex: none;
+  width: auto;
+}
+
+.specialty-doctors__nav {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 28px;
+}
+
+.specialty-doctors__nav[hidden] {
+  display: none;
+}
+
+.specialty-doctors__btn {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.specialty-doctors__btn:hover:not(:disabled) {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.specialty-doctors__btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.specialty-more {
+  border: 1px solid var(--line);
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: inherit;
+  align-self: stretch;
+  min-height: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  transition: border-color 0.25s ease, color 0.25s ease;
+}
+
+.specialty-more__spec {
+  margin: 0 0 12px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.specialty-more__title {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 12px;
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+}
+
+.specialty-more__text {
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 300;
+  color: var(--muted);
+  margin: 0 0 20px;
+  max-width: 34ch;
+}
+
+.specialty-more__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.specialty-more:hover {
+  border-color: var(--ink);
+}
+
+.specialty-more:hover .specialty-more__cta {
+  gap: 14px;
+}
+
+.specialty-faq__more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+  margin-top: 36px;
+  padding: 16px 22px;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.specialty-faq__more-arr {
+  flex-shrink: 0;
+  font-family: var(--serif);
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  line-height: 1;
+}
+
+.specialty-faq__more:hover {
+  color: var(--ink);
+  border-color: var(--ink);
 }
 
 .section-head--specialty {
@@ -2532,51 +2821,21 @@ body.is-book-open {
 }
 
 .specialty-process__head {
-  text-align: center;
-  margin-bottom: var(--s10);
+  text-align: left;
+  margin-bottom: 36px;
 }
 
 .specialty-process__title {
-  font-size: 44px;
-  line-height: 1.14;
-  margin: var(--s3) auto 0;
-  max-width: 26ch;
-}
-
-.specialty-more {
-  border-top: 1px solid var(--line);
-  padding-top: 26px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  align-items: flex-start;
-}
-
-.specialty-more__spec {
-  margin: 0;
-}
-
-.specialty-more__title {
-  font-size: 28px;
-  font-weight: 400;
-  margin: 0;
-}
-
-.specialty-more__text {
-  font-size: 14.5px;
-  line-height: 1.65;
-  color: var(--muted);
-  margin: 0;
-}
-
-.specialty-more .btn {
-  margin-top: auto;
+  font-size: 40px;
+  line-height: 1.12;
+  margin: 16px 0 0;
+  max-width: none;
 }
 
 .specialty-faq__title {
-  font-size: 44px;
+  font-size: 40px;
   line-height: 1.12;
-  margin-top: var(--s3);
+  margin-top: 16px;
 }
 
 .faq-details--deep {
@@ -2618,6 +2877,42 @@ body.is-book-open {
 .faq-deep__list strong {
   color: var(--ink-soft);
   font-weight: 500;
+}
+
+.specialty-page .hero-text {
+  padding-top: 48px;
+  padding-bottom: var(--s8);
+}
+.specialty-page .crumbs {
+  margin-bottom: 40px;
+}
+.specialty-page .specialty-intro__eyebrow {
+  margin-top: 0;
+}
+.specialty-page .section {
+  padding-block: 80px;
+}
+.specialty-page > .hero-text + .section {
+  padding-block: 64px;
+}
+.specialty-page .section--dark.cta-band,
+.specialty-page .cta-band {
+  padding-block: 104px;
+}
+.specialty-page .cta-band__title {
+  margin: 20px auto 16px;
+  font-size: 50px;
+  line-height: 1.1;
+  max-width: 480px;
+}
+.specialty-page .cta-band__lede {
+  margin: 0 auto 44px;
+}
+.specialty-page .faq details {
+  padding: 22px 0;
+}
+.specialty-page .faq summary {
+  font-size: 22px;
 }
 
 .cta-band__lede {
@@ -2677,8 +2972,7 @@ body.is-book-open {
 .section-head--spec-split {
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
-  -moz-column-gap: 56px;
-       column-gap: 56px;
+  column-gap: 56px;
   align-items: end;
   margin-bottom: 40px;
   max-width: none;
@@ -2699,8 +2993,7 @@ body.is-book-open {
 
 .specialties-split {
   grid-template-columns: minmax(0, 400px) minmax(0, 1fr);
-  -moz-column-gap: 60px;
-       column-gap: 60px;
+  column-gap: 60px;
   row-gap: 60px;
   align-items: start;
 }
@@ -2938,7 +3231,7 @@ body.is-book-open {
 }
 .specialties-page .hero-text {
   padding-top: 48px;
-  padding-bottom: 24px;
+  padding-bottom: var(--s8);
 }
 .specialties-page .crumbs {
   margin-bottom: 40px;
@@ -3011,8 +3304,7 @@ body.is-book-open {
 
 .clinic-about {
   grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
-  -moz-column-gap: 90px;
-       column-gap: 90px;
+  column-gap: 90px;
   row-gap: var(--s8);
   align-items: start;
 }
@@ -3145,8 +3437,7 @@ body.is-book-open {
 }
 
 .clinic-stats {
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  column-gap: 40px;
   row-gap: 40px;
   padding-top: 48px;
   border-top: 1px solid var(--line);
@@ -3225,8 +3516,7 @@ body.is-book-open {
 
 .photo--gallery-main img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .photo--gallery-side {
@@ -3245,8 +3535,7 @@ body.is-book-open {
 .clinic-specs {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  -moz-column-gap: 60px;
-       column-gap: 60px;
+  column-gap: 60px;
   row-gap: var(--s6);
 }
 
@@ -3284,8 +3573,7 @@ body.is-book-open {
 
 .beyond--clinic {
   border-top: 0;
-  -moz-column-gap: 48px;
-       column-gap: 48px;
+  column-gap: 48px;
   row-gap: 56px;
 }
 
@@ -3436,8 +3724,7 @@ body.is-book-open {
 
 .clinic-partner__split {
   grid-template-columns: minmax(0, 1.22fr) 1px minmax(0, 1fr);
-  -moz-column-gap: 60px;
-       column-gap: 60px;
+  column-gap: 60px;
   row-gap: var(--s6);
   align-items: center;
   margin-top: 48px;
@@ -3505,8 +3792,7 @@ body.is-book-open {
 
 .clinic-feature {
   grid-template-columns: minmax(0, 1.22fr) 1px minmax(0, 1fr);
-  -moz-column-gap: 60px;
-       column-gap: 60px;
+  column-gap: 60px;
   row-gap: var(--s6);
   align-items: center;
 }
@@ -3599,7 +3885,6 @@ body.is-book-open {
 
 .clinics-pair .card__badge {
   display: inline-block;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 14px 0 0;
   padding: 6px 12px;
@@ -3637,10 +3922,6 @@ body.is-book-open {
   border-bottom-color: rgba(255, 255, 255, 0.4);
 }
 
-.cta-band .input--on-dark::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.55);
-}
-
 .cta-band .input--on-dark::placeholder {
   color: rgba(255, 255, 255, 0.55);
 }
@@ -3660,8 +3941,7 @@ body.is-book-open {
 }
 
 .photo__img--mid {
-  -o-object-position: center 30%;
-     object-position: center 30%;
+  object-position: center 30%;
 }
 
 .pkg-table-wrap {
@@ -3862,8 +4142,7 @@ body.is-book-open {
 .svc-diamond {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  -moz-column-gap: var(--s8);
-       column-gap: var(--s8);
+  column-gap: var(--s8);
 }
 
 .svc-diamond > div {
@@ -4044,6 +4323,7 @@ body.is-book-open {
   .doctor-clinic,
   .specialties-split,
   .specialties-split--flip,
+  .specialty-about,
   .clinic-mosaic,
   .clinic-feature,
   .clinic-partner__split,
@@ -4098,8 +4378,7 @@ body.is-book-open {
   }
   .svc-list {
     grid-template-columns: 1fr;
-    -moz-column-gap: 0;
-         column-gap: 0;
+    column-gap: 0;
   }
   .founder-split {
     grid-template-columns: 1fr;
@@ -4159,12 +4438,29 @@ body.is-book-open {
   }
   .specialties-page .hero-text {
     padding-top: var(--s4);
-    padding-bottom: 4px;
+    padding-bottom: var(--s5);
   }
   .specialties-page .specialties-intro__title {
     font-size: 40px;
   }
   .specialties-page .specialties-intro__lede {
+    font-size: 20px;
+  }
+  .specialty-page .section,
+  .specialty-page .section--dark.cta-band,
+  .specialty-page .cta-band,
+  .specialty-page > .hero-text + .section {
+    padding-block: var(--s8);
+  }
+  .specialty-page .hero-text {
+    padding-top: var(--s4);
+    padding-bottom: var(--s5);
+  }
+  .specialty-page .specialty-intro__title {
+    font-size: 36px;
+    max-width: none;
+  }
+  .specialty-page .specialty-intro__lede {
     font-size: 20px;
   }
   .specialties-cards .card--text,
@@ -4192,7 +4488,7 @@ body.is-book-open {
     padding-block: 48px;
   }
   .page-intro {
-    padding-top: var(--s5);
+    padding-top: var(--s4);
   }
   .page-intro__body {
     padding-block: 22px 42px;
@@ -4512,23 +4808,54 @@ body.is-book-open {
   }
   .specialty-about__title,
   .specialty-faq__title,
-  .specialty-process__title {
+  .specialty-process__title,
+  .specialty-section-head__title {
     font-size: 32px;
+  }
+  .specialty-intro__title {
+    font-size: 48px;
+  }
+  .specialty-about {
+    grid-template-columns: 1fr;
+  }
+  .specialty-facts {
+    padding-left: 0;
+    border-left: 0;
+    padding-top: var(--s4);
+    border-top: 1px solid var(--line);
+  }
+  .specialty-task {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
   }
   .specialty-facts__row {
     grid-template-columns: 1fr;
     gap: 8px;
   }
+  .specialty-doctors {
+    --sd-cols: 2;
+  }
+  .specialty-doctors:not(.is-slider) .specialty-doctors__track {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .specialty-doctors.is-slider .specialty-doctors__item {
+    flex: 0 0 calc((100cqw - var(--sd-gap)) / 2);
+  }
   .specialty-more__title {
-    font-size: 24px;
+    font-size: 22px;
+  }
+  .specialty-page .section,
+  .specialty-page .section--dark.cta-band,
+  .specialty-page .cta-band,
+  .specialty-page > .hero-text + .section {
+    padding-block: var(--s10);
   }
   .specialties-all__list {
     grid-template-columns: 1fr 1fr;
   }
   .clinic-about {
     grid-template-columns: 1fr;
-    -moz-column-gap: 0;
-         column-gap: 0;
+    column-gap: 0;
   }
   .clinic-gallery__mosaic,
   .clinic-gallery__pair,
@@ -4763,12 +5090,22 @@ body.is-book-open {
   .specialty-about__title,
   .specialty-faq__title,
   .specialty-process__title,
+  .specialty-section-head__title,
   .clinic-about__title,
   .clinic-section-head__title,
   .clinic-feature__title,
   .checkup-clinic__title,
   .book-modal__title {
     font-size: 24px;
+  }
+  .specialty-doctors {
+    --sd-cols: 1;
+  }
+  .specialty-doctors:not(.is-slider) .specialty-doctors__track {
+    grid-template-columns: 1fr;
+  }
+  .specialty-doctors.is-slider .specialty-doctors__item {
+    flex: 0 0 100cqw;
   }
   .stat__value {
     font-size: 32px;
@@ -4806,4 +5143,4 @@ body.is-book-open {
   .specialties-all__list {
     grid-template-columns: 1fr;
   }
-}/*# sourceMappingURL=style.css.map */
+}
