@@ -7,7 +7,7 @@
         <meta name="description" content="Privatklinik Bethanien в Цюрихе — флагман частной медицины Швейцарии, участник Mayo Clinic Care Network и главный партнёр CorSwiss с 2011 года." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
@@ -43,8 +43,8 @@
         </header>
         <div class="header-spacer" aria-hidden="true"></div>
 
-        <main>
-            <section class="hero-text">
+        <main class="clinic-page">
+            <section class="hero-text hero-text--clinic">
                 <nav class="crumbs" aria-label="Хлебные крошки">
                     <a href="index.html">CorSwiss</a>
                     <span aria-hidden="true">/</span>
@@ -53,65 +53,60 @@
                     <span aria-current="page">Privatklinik Bethanien</span>
                 </nav>
                 <p class="eyebrow clinic-intro__eyebrow">Главный партнёр · Цюрих · с 2011 года</p>
-                <h1 class="display hero-text__title">Privatklinik Bethanien</h1>
+                <h1 class="display hero-text__title clinic-intro__title">Privatklinik Bethanien</h1>
                 <p class="lede clinic-intro__lede">Флагман частной медицины Швейцарии и наш ключевой партнёр по лечению и чекапам — участник Mayo Clinic Care Network.</p>
             </section>
 
             <section class="clinic-cover">
-                <figure>
-                    <div class="photo photo--wide">
-                        <img src="images/clinics/cat-bethanien-aerial.jpg" alt="Кампус Privatklinik Bethanien на холме Цюрихберг" />
-                    </div>
-                    <figcaption class="photo__caption"><span>Кампус на холме Цюрихберг</span><span>Toblerstrasse 51, 8044 Zürich</span></figcaption>
-                </figure>
+                <div class="photo photo--wide">
+                    <img src="images/clinics/cat-bethanien-aerial.jpg" alt="Кампус Privatklinik Bethanien на холме Цюрихберг" />
+                </div>
             </section>
 
-            <section class="section section--sunken">
-                <div class="grid grid--label">
-                    <div>
+            <section class="section section--tight">
+                <div class="grid clinic-about">
+                    <div class="clinic-about__main">
                         <p class="eyebrow">О клинике</p>
                         <h2 class="display clinic-about__title">Медицина мирового уровня в сердце Цюриха</h2>
+                        <div class="clinic-about__stack">
+                            <p class="clinic-about__text">Privatklinik Bethanien — одна из ведущих частных клиник Швейцарии, основанная в 1912 году и расположенная в престижном районе Цюриха с видом на озеро и Альпы. С 2010 года клиника входит в сеть Swiss Medical Network и является участником Mayo Clinic Care Network — это значит прямой доступ к опыту и протоколам клиники Mayo.</p>
+                            <p class="clinic-about__text">Здесь врачи с мировым именем, передовые технологии (включая роботизированную хирургию Da Vinci) и полный цикл — от диагностики и чекапа до лечения и восстановления — сочетаются с сервисом уровня пятизвёздочного отеля.</p>
+                            <p class="clinic-about__text">Клиника привыкла к пациентам, для которых приватность критична: закрытые зоны, отдельные палаты-люкс и полная конфиденциальность на каждом этапе. Здесь умеют создавать условия для самых требовательных международных пациентов.</p>
+                        </div>
                     </div>
-                    <div class="clinic-about__stack">
-                        <p class="clinic-about__text">Privatklinik Bethanien — одна из ведущих частных клиник Швейцарии, основанная в 1912 году и расположенная в престижном районе Цюриха с видом на озеро и Альпы. С 2010 года клиника входит в сеть Swiss Medical Network и является участником Mayo Clinic Care Network — это значит прямой доступ к опыту и протоколам клиники Mayo.</p>
-                        <p class="clinic-about__text">Здесь врачи с мировым именем, передовые технологии (включая роботизированную хирургию Da Vinci) и полный цикл — от диагностики и чекапа до лечения и восстановления — сочетаются с сервисом уровня пятизвёздочного отеля.</p>
-                        <p class="clinic-about__text">Клиника привыкла к пациентам, для которых приватность критична: закрытые зоны, отдельные палаты-люкс и полная конфиденциальность на каждом этапе. Здесь умеют создавать условия для самых требовательных международных пациентов.</p>
-                    </div>
+                    <dl class="clinic-facts clinic-facts--stack clinic-facts--about">
+                        <div class="clinic-facts__row">
+                            <dt class="clinic-facts__label">Расположение</dt>
+                            <dd class="clinic-facts__value">Цюрих, Toblerstrasse 51 — на холме Цюрихберг с видом на озеро. ~10 мин до центра, ~15 мин до аэропорта.</dd>
+                        </div>
+                        <div class="clinic-facts__row">
+                            <dt class="clinic-facts__label">Сеть</dt>
+                            <dd class="clinic-facts__value">Swiss Medical Network · Mayo Clinic Care Network</dd>
+                        </div>
+                        <div class="clinic-facts__row">
+                            <dt class="clinic-facts__label">Основана</dt>
+                            <dd class="clinic-facts__value">1912 год</dd>
+                        </div>
+                        <div class="clinic-facts__row">
+                            <dt class="clinic-facts__label">Сертификация</dt>
+                            <dd class="clinic-facts__value">ISO 9001:2015 · Swiss Leading Hospitals</dd>
+                        </div>
+                        <div class="clinic-facts__row">
+                            <dt class="clinic-facts__label">Сервис</dt>
+                            <dd class="clinic-facts__value">Палаты-люкс и сюиты с видом на озеро, room-service и кухня от шеф-повара</dd>
+                        </div>
+                        <div class="clinic-facts__row">
+                            <dt class="clinic-facts__label">Партнёр CorSwiss</dt>
+                            <dd class="clinic-facts__value">с 2011 года</dd>
+                        </div>
+                    </dl>
                 </div>
-                <dl class="clinic-facts">
-                    <div class="clinic-facts__row">
-                        <dt class="clinic-facts__label">Расположение</dt>
-                        <dd class="clinic-facts__value">Цюрих, Toblerstrasse 51 — на холме Цюрихберг с видом на озеро. ~10 мин до центра, ~15 мин до аэропорта.</dd>
-                    </div>
-                    <div class="clinic-facts__row">
-                        <dt class="clinic-facts__label">Сеть</dt>
-                        <dd class="clinic-facts__value">Swiss Medical Network · Mayo Clinic Care Network</dd>
-                    </div>
-                    <div class="clinic-facts__row">
-                        <dt class="clinic-facts__label">Основана</dt>
-                        <dd class="clinic-facts__value">1912 год</dd>
-                    </div>
-                    <div class="clinic-facts__row">
-                        <dt class="clinic-facts__label">Сертификация</dt>
-                        <dd class="clinic-facts__value">ISO 9001:2015 · Swiss Leading Hospitals</dd>
-                    </div>
-                    <div class="clinic-facts__row">
-                        <dt class="clinic-facts__label">Сервис</dt>
-                        <dd class="clinic-facts__value">Палаты-люкс и сюиты с видом на озеро, room-service и кухня от шеф-повара</dd>
-                    </div>
-                    <div class="clinic-facts__row">
-                        <dt class="clinic-facts__label">Партнёр CorSwiss</dt>
-                        <dd class="clinic-facts__value">с 2011 года</dd>
-                    </div>
-                </dl>
             </section>
 
-            <section class="section">
-                <div class="clinic-section-head">
-                    <p class="eyebrow">Цифры и факты</p>
+            <section class="section section--sunken section--clinic-stats">
                     <h2 class="display clinic-section-head__title">Масштаб и опыт</h2>
                 </div>
-                <div class="grid grid--4">
+                <div class="grid grid--4 clinic-stats">
                     <div class="stat">
                         <p class="display stat__value">105</p>
                         <p class="stat__label">палат, включая люкс-сюиты</p>
@@ -131,139 +126,104 @@
                 </div>
             </section>
 
-            <section class="section section--sunken">
+            <section class="section">
                 <div class="clinic-section-head clinic-section-head--sm">
                     <p class="eyebrow">Видео</p>
-                    <h2 class="display clinic-section-head__title">Добро пожаловать в Bethanien</h2>
+                    <h2 class="display clinic-section-head__title clinic-section-head__title--lg">Добро пожаловать в Bethanien</h2>
                 </div>
-                <figure>
-                    <div class="photo photo--video">
-                        <iframe src="https://www.youtube.com/embed/fc7gnYdPrt4" title="Экскурсия по Privatklinik Bethanien" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <figcaption class="photo__caption"><span>Экскурсия по клинике</span><span>2 мин</span></figcaption>
-                </figure>
-            </section>
-
-            <section class="section">
-                <div class="grid grid--3 clinic-gallery">
-                    <figure class="clinic-gallery__wide">
-                        <div class="photo photo--video">
-                            <img src="images/clinics/cat-bethanien-lobby.jpg" alt="Лобби-зал и лаунж" />
-                        </div>
-                        <figcaption class="photo__caption"><span>Лобби-зал и лаунж</span></figcaption>
-                    </figure>
-                    <figure>
-                        <div class="photo photo--landscape">
-                            <img src="images/clinics/bethanien-suite.jpg" alt="Палата-сюита" />
-                        </div>
-                        <figcaption class="photo__caption"><span>Палата-сюита</span></figcaption>
-                    </figure>
-                    <figure>
-                        <div class="photo photo--landscape">
-                            <img src="images/clinics/cat-bethanien-aerial.jpg" alt="Кампус на холме Цюрихберг" />
-                        </div>
-                        <figcaption class="photo__caption"><span>Кампус на холме Цюрихберг</span></figcaption>
-                    </figure>
-                    <figure>
-                        <div class="photo photo--landscape">
-                            <img src="images/clinics/bethanien-davinci.jpg" alt="Операционная Da Vinci" />
-                        </div>
-                        <figcaption class="photo__caption"><span>Операционная Da Vinci</span></figcaption>
-                    </figure>
-                    <figure>
-                        <div class="photo photo--landscape">
-                            <img src="images/clinics/cat-bethanien-room.jpg" alt="Палата-люкс с видом на озеро" />
-                        </div>
-                        <figcaption class="photo__caption"><span>Палата-люкс с видом на озеро</span></figcaption>
-                    </figure>
+                <div class="photo photo--video">
+                    <iframe src="https://www.youtube.com/embed/fc7gnYdPrt4" title="Экскурсия по Privatklinik Bethanien" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </section>
 
             <section class="section section--sunken">
-                <div class="section-head section-head--clinic">
-                    <div>
-                        <p class="eyebrow">Медицинские направления</p>
-                        <h2 class="display section-head__title">Ключевые специализации</h2>
+                <h2 class="display clinic-gallery__title">Галерея</h2>
+                <div class="clinic-gallery">
+                    <div class="grid clinic-gallery__mosaic">
+                        <div class="photo photo--gallery-main">
+                            <img src="images/clinics/cat-bethanien-lobby.jpg" alt="Лобби-зал и лаунж" />
+                        </div>
+                        <div class="clinic-gallery__stack">
+                            <div class="photo photo--gallery-side">
+                                <img src="images/clinics/bethanien-suite.jpg" alt="Палата-сюита" />
+                            </div>
+                            <div class="photo photo--gallery-side">
+                                <img src="images/clinics/cat-bethanien-aerial.jpg" alt="Кампус на холме Цюрихберг" />
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="svc-list">
-                    <article>
-                        <span class="num">01</span>
-                        <div>
-                            <h3>Превентивный чекап</h3>
-                            <p>программа за 1–3 дня</p>
+                    <div class="grid clinic-gallery__pair">
+                        <div class="photo photo--gallery-pair">
+                            <img src="images/clinics/bethanien-davinci.jpg" alt="Операционная Da Vinci" />
                         </div>
-                    </article>
-                    <article>
-                        <span class="num">02</span>
-                        <div>
-                            <h3>Кардиология</h3>
-                            <p>диагностика и лечение сердца</p>
+                        <div class="photo photo--gallery-pair">
+                            <img src="images/clinics/cat-bethanien-room.jpg" alt="Палата-люкс с видом на озеро" />
                         </div>
-                    </article>
-                    <article>
-                        <span class="num">03</span>
-                        <div>
-                            <h3>Онкология</h3>
-                            <p>диагностика и комплексное лечение</p>
-                        </div>
-                    </article>
-                    <article>
-                        <span class="num">04</span>
-                        <div><h3>Ортопедия и хирургия позвоночника</h3></div>
-                    </article>
-                    <article>
-                        <span class="num">05</span>
-                        <div>
-                            <h3>Висцеральная хирургия</h3>
-                            <p>роботизированная Da Vinci</p>
-                        </div>
-                    </article>
-                    <article>
-                        <span class="num">06</span>
-                        <div><h3>Урология</h3></div>
-                    </article>
-                    <article>
-                        <span class="num">07</span>
-                        <div>
-                            <h3>Гастроэнтерология</h3>
-                            <p>эндоскопия и профилактика</p>
-                        </div>
-                    </article>
-                    <article>
-                        <span class="num">08</span>
-                        <div>
-                            <h3>Ангиология</h3>
-                            <p>сосудистая диагностика</p>
-                        </div>
-                    </article>
-                    <article>
-                        <span class="num">09</span>
-                        <div><h3>ЛОР и челюстно-лицевая хирургия</h3></div>
-                    </article>
-                    <article>
-                        <span class="num">10</span>
-                        <div><h3>Внутренняя медицина</h3></div>
-                    </article>
-                    <article>
-                        <span class="num">11</span>
-                        <div><h3>Пластическая и реконструктивная хирургия</h3></div>
-                    </article>
-                    <article>
-                        <span class="num">12</span>
-                        <div><h3>Гинекология</h3></div>
-                    </article>
+                    </div>
                 </div>
             </section>
 
             <section class="section">
-                <div class="section-head section-head--clinic">
-                    <div>
-                        <p class="eyebrow">Через CorSwiss</p>
-                        <h2 class="display section-head__title">Что мы берём на себя</h2>
-                    </div>
+                <div class="clinic-section-head clinic-section-head--specs">
+                    <p class="eyebrow">Медицинские направления</p>
+                    <h2 class="display clinic-section-head__title clinic-section-head__title--lg">Ключевые специализации</h2>
                 </div>
-                <div class="beyond">
+                <div class="clinic-specs">
+                    <ul class="clinic-specs__col">
+                        <li>
+                            <span class="clinic-specs__name">Превентивный чекап</span>
+                            <span class="clinic-specs__meta"><span aria-hidden="true">—</span> программа за 1–3 дня</span>
+                        </li>
+                        <li>
+                            <span class="clinic-specs__name">Кардиология</span>
+                            <span class="clinic-specs__meta"><span aria-hidden="true">—</span> диагностика и лечение сердца</span>
+                        </li>
+                        <li>
+                            <span class="clinic-specs__name">Онкология</span>
+                            <span class="clinic-specs__meta"><span aria-hidden="true">—</span> диагностика и комплексное лечение</span>
+                        </li>
+                        <li>
+                            <span class="clinic-specs__name">Ортопедия и хирургия позвоночника</span>
+                        </li>
+                        <li>
+                            <span class="clinic-specs__name">Висцеральная хирургия</span>
+                            <span class="clinic-specs__meta"><span aria-hidden="true">—</span> роботизированная Da Vinci</span>
+                        </li>
+                        <li>
+                            <span class="clinic-specs__name">Урология</span>
+                        </li>
+                    </ul>
+                    <ul class="clinic-specs__col">
+                        <li>
+                            <span class="clinic-specs__name">Гастроэнтерология</span>
+                            <span class="clinic-specs__meta"><span aria-hidden="true">—</span> эндоскопия и профилактика</span>
+                        </li>
+                        <li>
+                            <span class="clinic-specs__name">Ангиология</span>
+                            <span class="clinic-specs__meta"><span aria-hidden="true">—</span> сосудистая диагностика</span>
+                        </li>
+                        <li>
+                            <span class="clinic-specs__name">ЛОР и челюстно-лицевая хирургия</span>
+                        </li>
+                        <li>
+                            <span class="clinic-specs__name">Внутренняя медицина</span>
+                        </li>
+                        <li>
+                            <span class="clinic-specs__name">Пластическая и реконструктивная хирургия</span>
+                        </li>
+                        <li>
+                            <span class="clinic-specs__name">Гинекология</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section section--sunken">
+                <div class="clinic-section-head">
+                    <p class="eyebrow">Через CorSwiss</p>
+                    <h2 class="display clinic-section-head__title clinic-section-head__title--lg">Что мы берём на себя</h2>
+                </div>
+                <div class="beyond beyond--clinic">
                     <article>
                         <span class="num">01</span>
                         <h3 class="display">Прямой доступ</h3>
@@ -297,10 +257,10 @@
                 </div>
             </section>
 
-            <section class="section section--accent cta-band" id="cta">
+            <section class="section section--dark cta-band" id="cta">
                 <div class="cta-band__inner cta-band__inner--wide">
                     <p class="eyebrow eyebrow--light">Консультация</p>
-                    <h2 class="display cta-band__title">Хотите попасть в Privatklinik Bethanien?</h2>
+                    <h2 class="display cta-band__title">Хотите попасть в <em>Privatklinik Bethanien?</em></h2>
                     <p class="cta-band__lede">Оставьте заявку — медицинский менеджер CorSwiss свяжется с вами, подберёт профессора и рассчитает программу лечения.</p>
                     <div class="cta-band__actions">
                         <a class="btn btn--light" href="contacts.html">Получить консультацию <span class="arr" aria-hidden="true">→</span></a>

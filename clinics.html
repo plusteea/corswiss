@@ -7,7 +7,7 @@
         <meta name="description" content="Клиники, с которыми мы работаем: Privatklinik Bethanien, Университетская клиника Цюриха, Hirslanden, Valmont, Les Alpes, Bad Ragaz, Chenot Palace." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
@@ -50,7 +50,6 @@
                     <span aria-hidden="true">/</span>
                     <span aria-current="page">Клиники</span>
                 </nav>
-                <p class="eyebrow clinics-intro__eyebrow">Клиники</p>
                 <h1 class="display hero-text__title clinics-intro__title">Клиники, с&nbsp;которыми<br />мы работаем</h1>
                 <p class="clinics-intro__lede">Тщательно отобранная коллекция лучших клиник и центров Швейцарии — результат многолетнего тесного сотрудничества с каждой из них.</p>
             </section>
@@ -161,7 +160,6 @@
                         <div class="photo photo--mosaic-main">
                             <img src="images/clinics/cat-valmont-main.jpg" alt="Clinique Valmont" />
                         </div>
-                        <figcaption class="photo__caption"><span>Глион над Монтрё · Swiss Medical Network</span></figcaption>
                     </figure>
                     <div class="clinic-mosaic__stack">
                         <div class="photo photo--mosaic-side">
@@ -174,6 +172,9 @@
                 </div>
                 <div class="grid clinic-partner__split">
                     <div class="clinic-partner__main">
+                        <div class="clinic-partner__intro">
+                            <p class="clinic-partner__place">Глион над Монтрё · Swiss Medical Network</p>
+                        </div>
                         <p class="clinic-partner__text">Наш партнёр по реабилитации, входящий в Swiss Medical Network. Специализируется на неврологической и ортопедической реабилитации в спокойной обстановке с панорамными видами на Женевское озеро — идеальное место для восстановления после операции и лечения.</p>
                         <div class="clinic-partner__actions">
                             <a class="btn btn--ghost" href="clinic.html">Подробнее <span class="arr" aria-hidden="true">→</span></a>
@@ -226,18 +227,19 @@
                     <h2 class="display clinic-feature__title">Зубы и улыбка — у лучших специалистов Швейцарии</h2>
                 </div>
                 <div class="grid clinic-feature">
-                    <figure>
-                        <div class="photo photo--landscape">
-                            <img src="images/clinics/cat-swiss-smile.jpg" alt="swiss smile" />
-                        </div>
-                        <figcaption class="photo__caption"><span>Швейцария · премиум стоматология</span><span>swiss smile</span></figcaption>
-                    </figure>
-                    <span class="clinic-partner__rule" aria-hidden="true"></span>
-                    <div class="clinic-feature__copy">
+                    <div class="clinic-feature__main">
+                        <figure>
+                            <div class="photo photo--landscape">
+                                <img src="images/clinics/cat-swiss-smile.jpg" alt="swiss smile" />
+                            </div>
+                            <figcaption class="photo__caption photo__caption--soft">Швейцария · премиум стоматология</figcaption>
+                        </figure>
+                        <h3 class="clinic-feature__name">swiss smile</h3>
                         <p class="clinic-feature__text">Сеть премиальных стоматологических центров: эстетическая стоматология, имплантология и полная реставрация улыбки. Акцент на комфорт и приватность.</p>
-                        <a class="btn btn--ghost" href="clinic.html">Подробнее <span class="arr" aria-hidden="true">→</span></a>
-                        <p class="display italic clinic-partner__quote clinic-partner__quote--sm">«Зубная эстетика — часть общего образа. Мы подбираем специалиста под конкретную задачу: от отбеливания до полной реставрации».</p>
+                        <a class="clinic-feature__more" href="clinic.html">Подробнее <span class="arr" aria-hidden="true">→</span></a>
                     </div>
+                    <span class="clinic-partner__rule" aria-hidden="true"></span>
+                    <p class="display italic clinic-partner__quote">«Зубная эстетика — часть общего образа. Мы подбираем специалиста под конкретную задачу: от отбеливания до полной реставрации».</p>
                 </div>
             </section>
 
@@ -252,7 +254,6 @@
                         <div class="photo photo--mosaic-main">
                             <img src="images/clinics/cat-alpes.jpg" alt="Clinique Les Alpes" />
                         </div>
-                        <figcaption class="photo__caption"><span>Монтрё · приватная клиника</span></figcaption>
                     </figure>
                     <div class="clinic-mosaic__stack">
                         <div class="photo photo--mosaic-side">
@@ -265,7 +266,10 @@
                 </div>
                 <div class="grid clinic-partner__split">
                     <div class="clinic-partner__main">
-                        <p class="clinic-partner__badge">Признана одной из лучших в мире · luxury rehab &amp; mental health</p>
+                        <div class="clinic-partner__intro">
+                            <p class="clinic-partner__place">Монтрё · приватная клиника</p>
+                            <p class="clinic-partner__badge">Признана одной из лучших в мире · luxury rehab &amp; mental health</p>
+                        </div>
                         <p class="clinic-partner__text">Швейцарская клиника для лечения зависимостей (вещества и поведение), выгорания и психических расстройств — неоднократно признанная одним из лучших в мире люкс-центров реабилитации и психического здоровья. Индивидуальные программы в полной приватности, с видом на Женевское озеро и Альпы.</p>
                         <div class="clinic-partner__actions">
                             <a class="btn btn--ghost" href="clinic.html">Подробнее <span class="arr" aria-hidden="true">→</span></a>
